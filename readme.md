@@ -114,18 +114,26 @@ You may use a number pad as input device. I used velcro to secure the number pad
 
 ## Software changes to fit better on to the glass
 views/altitude.py
+
 views/skid_and_gs.py
+
 views/groundspeed.py
+
 
 Look for "self.__text_y_pos__ = (text_half_height << 2) + \
             center_y - text_half_height"
 
 ### Software changes on raspberry
 /boot/config.txt
+
 disable_overscan=1
+
 overscan_left=200
+
 overscan_right=400
+
 Overscan_top=400
+
 Overscan_bottom=-100
 
 ## Parts List HUD only
@@ -141,7 +149,7 @@ Overscan_bottom=-100
 - [Virtual Reality VR AR Brille Gläser Arbox Holographischer Effekt 3D](https://www.ebay.de/itm/Virtual-Reality-VR-AR-Brille-Gläser-Arbox-Holographischer-Effekt-3D/382299251509?ssPageName=STRK%3AMEBIDX%3AIT&_trksid=p2060353.m2749.l2649)
 - [Anker PowerCore 20100mAh Externer Akku (Powerbank) mit 2 Ports und 4,8-A-Output](https://www.ebay.de/itm/Anker-PowerCore-20100mAh-Externer-Akku-Powerbank-mit-2-Ports-und-4-8-A-Output/253034763977?ssPageName=STRK%3AMEBIDX%3AIT&_trksid=p2060353.m2749.l2649)
 
-### Recommended HUDLY Build
+### HUDLY Build
 
 - [HUDLY Classic](https://gethudly.com/classic)
   - _NOTE:_ You will most likely want to order the cigarette lighter powered version.
