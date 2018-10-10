@@ -1,4 +1,4 @@
-# School Project STRATUX/FLARM HUD
+#STRATUX/FLARM HUD (Maturaarbeit 2018)
 
 ## Introduction
 
@@ -13,16 +13,16 @@ _*NOTE:*_ This project relies on having a [Stratux](http://stratux.me/) build wi
 
 Using the "AR Glasses" 3.5inches LCD Monitor and a Raspberry Pi 3.
 
-![HUDLY Version](media/IMG_2180.JPG)
+![AR Glasses](media/IMG_2180.JPG)
 
-Estimated cost is $300
+Estimated cost is $230
 
 - $40 for RaspberryPi 3
 - $49 for AR Glasses 
 - $39 for 3.5inch RPi LCD 
 - $20 for Gesture control from Nevma project
 - $49 for PowerBar
-- Fans, case, cables
+- $30 Fans, case, cables
 
 (Requires your aircraft to have a "12 Volt" cigarette power outlet)
 
@@ -112,96 +112,30 @@ You may use a number pad as input device. I used velcro to secure the number pad
 | Esc       | Send shutdown commands to both the HUD controller _*and*_ the Stratux        |
 | q         | (_Full keyboard only_) Quit to the command line.                             |
 
-## Views
+## Software changes to fit better on to the glass
+views/altitude.py
+views/skid_and_gs.py
+views/groundspeed.py
 
-- Traffic
-- AHRS
-- Traffic List (Text only)
-- Blank
+Look for "self.__text_y_pos__ = (text_half_height << 2) + \
+            center_y - text_half_height"
 
-### Traffic View
+### Software changes on raspberry
+/boot/config.txt
+disable_overscan=1
+overscan_left=200
+overscan_right=400
+Overscan_top=400
+Overscan_bottom=-100
 
-#### TRAFFIC EXAMPLE
+## Parts List HUD only
 
-![Traffic View Screenshot](media/traffic_view.jpg)
-
-We are receiving ADS-B from three planes.
-N705JA is right ahead of us, bearing 90. We have a GPS track of 112 degrees.
-N705JA is 1.1 statute miles ahead, and 2,200 feet above.
-We have a large red target reticle that shows where N705JA actually is outside the cockpit.
-
-Delta Airlines flight 39 is also ahead of us, and slightly to the right.
-It is further away, so the red reticle is smaller.
-
-Note tha a red triangle points from the information card to the heading strip where the traffic is.
-
-The closer the traffic, the larger the heading bug.
-
-#### Traffic View Explanation
-
-This shows you all of the traffic with reliable ADSB data.
-
-_NOTE: Any planes further than 10SM are excluded from this view._
-
-It attempts to prioritize traffic by distance.
-
-At the bottom is a heading strip. It shows you in text with a green background your GPS track and your gyro based direction. Combined they will give you an idea of any crab being maintained.
-
-To the left and right are the headings 180 degrees from center.
-
-Drawn above the heading strip are red "bugs". The larger the heading bug, the closer the traffic is.
-
-Right above each bug is a yellow "card" that shows you information about that traffic.
-
-At the top is the Tail Number, and if that is not available, a unique identifier that is broadcast.
-The next line is the bearing to the traffic.
-Below that is the distance to the target.
-Finally, the bottom line is the relative altitude in hundreds of feet. (+2 would be 200' above you.)
-
-Cards are drawn so the furthest traffic is "at the bottom of the stack". This prioritizes the closest traffic to have all content readable.
-
-### AHRS View
-
-#### AHRS VIEW EXAMPLE
-
-![Traffic View Screenshot](media/ahrs_view.jpg)
-
-We have a GPS track of 153 degrees.
-We are in a 28 degree turn to the left.
-We are 15 degrees nose up.
-Our GPS altitude is 309'
-We are experiencing 0.8Gs, less than normal gravity.
-
-### Traffic Listing View
-
-### TRAFFIC LISTING VIEW EXAMPLE
-
-![Traffic View Screenshot](media/traffic_listing_view.jpg)
-
-This shows us _at most_ the five closest planes.
-
-_NOTE: Any planes further than 10SM are excluded from this view._
-
-Here we see N435SP is the closest plane, bearing 345, 1.0 statute miles away, and 1,300' above us.
-
-N705JA is the second closest plane. It is Bearing 78, 1.2 statues miles away and 2,300 feet above us.
-
-### Blank
-
-A blank screen so no information is displayed.
-
-## Parts List
-
-### All Builds
-
-_NOTE:_ This _does not_ include a power source. You will need to supply ship power from a 5V USB port or from a battery.
-
-- [Raspberry Pi 3](https://www.amazon.com/Raspberry-Pi-RASPBERRYPI3-MODB-1GB-Model-Motherboard/dp/B01CD5VC92/ref=sr_1_3?s=electronics&ie=UTF8&qid=1529215701&sr=1-3&keywords=raspberry+pi+3)
-- [Case For Raspberry Pi](https://www.amazon.com/iPhoenix-Raspberry-White-Compatible-Model/dp/B06XQSXZ97/ref=sr_1_3?s=electronics&dd=iYEspjjyeRXfqDW9BHwJFw%2C%2C&ddc_refnmnt=pfod&ie=UTF8&qid=1529215794&sr=1-3&keywords=white+raspberry+pi+3+case&refinements=p_97%3A11292772011)
-- [Cooling Fan for Raspberry Pi](https://www.amazon.com/gp/product/B075R4S9GH/ref=od_aui_detailpages00?ie=UTF8&psc=1)
-- [Micro USB Cable](https://www.amazon.com/AmazonBasics-Male-Micro-Cable-Black/dp/B0711PVX6Z/ref=sr_1_6?s=electronics&ie=UTF8&qid=1529215888&sr=1-6&keywords=micro+usb+cable)
-- [Micro SD Card](https://www.amazon.com/SanDisk-Ultra-Micro-Adapter-SDSQUNC-016G-GN6MA/dp/B010Q57SEE/ref=sr_1_10?s=pc&ie=UTF8&qid=1529215944&sr=1-10&keywords=micro+sd+card)
 - [Rottay Mechanical Keypad](https://www.amazon.com/Number-Rottay-Mechanical-Numeric-backlit/dp/B076FTSY6J/ref=sr_1_3?ie=UTF8&qid=1529215627&sr=8-3&keywords=mechanical+keypad)
+- [NEVMA New Mini ATMEGA32U4 Module Board Compatible For Arduino SS Micro ATMEGA32U4](https://www.ebay.de/itm/New-Mini-ATMEGA32U4-Module-Board-Compatible-For-Arduino-SS-Micro-ATMEGA32U4/272546371430?ssPageName=STRK%3AMEBIDX%3AIT&_trksid=p2060353.m2749.l2649)
+- [NEVMA GY-9960LLC APDS-9960 RGB and Gesture Sensor Module I2C Breakout for Arduino](https://www.amazon.com/Number-Rottay-Mechanical-Numeric-backlit/dp/B076FTSY6J/ref=sr_1_3?ie=UTF8&qid=1529215627&sr=8-3&keywords=mechanical+keypad)
+- [NEVMA PCB](https://www.amazon.com/Number-Rottay-Mechanical-Numeric-backlit/dp/B076FTSY6J/ref=sr_1_3?ie=UTF8&qid=1529215627&sr=8-3&keywords=mechanical+keypad)
+
+
 
 ### Recommended HUDLY Build
 
