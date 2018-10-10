@@ -14,7 +14,8 @@ class Altitude(AhrsElement):
         self.__font__ = font
         center_y = framebuffer_size[1] >> 2
         text_half_height = int(font.get_height()) >> 1
-        self.__text_y_pos__ = center_y - text_half_height
+        self.__text_y_pos__ = (text_half_height << 3) + \
+            center_y - text_half_height
         self.__rhs__ = int(framebuffer_size[0]) # was 0.9
 
     def render(self, framebuffer, orientation):
