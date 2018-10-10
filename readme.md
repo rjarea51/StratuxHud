@@ -11,17 +11,20 @@ _*NOTE:*_ This project relies on having a [Stratux](http://stratux.me/) build wi
 
 ### Wearabel HUD
 
-Using the "HUDLY Classic" projector and a Raspberry Pi 3.
+Using the "AR Glasses" 3.5inches LCD Monitor and a Raspberry Pi 3.
 
 ![HUDLY Version](media/IMG_2180.JPG)
 
 Estimated cost is $300
 
 - $40 for RaspberryPi 3
-- $215 for HUDLY projector
+- $49 for AR Glasses https://www.ebay.de/itm/Virtual-Reality-VR-AR-Brille-Gläser-Arbox-Holographischer-Effekt-3D/382299251509?ssPageName=STRK%3AMEBIDX%3AIT&_trksid=p2060353.m2749.l2649
+- $39 for 3.5inch RPi LCD https://www.waveshare.com/wiki/3.5inch_RPi_LCD_(A)
+- $20 for Gesture control from Nevma project
+- $49 for PowerBar
 - Fans, case, cables
 
-Requires your aircraft to have a "12 Volt" cigarette power outlet.
+(Requires your aircraft to have a "12 Volt" cigarette power outlet)
 
 
 ## In Flight Controls
