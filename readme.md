@@ -22,7 +22,7 @@ Estimated cost is $230
 - $49 for PowerBar
 - $30 Cables / plastic for side pieces / srews
 
-(I used an old Flightcom Venture type headset it has to have a screw for adjustment in order to attach the plastic connection piece on either side)
+(I used an old Flightcom Venture type headset. It has to have a screw for adjustment in order to attach the plastic connection piece on either side)
 
 (An old bike hlemed gave me the head adjustmend function for a tighter fit)
 
