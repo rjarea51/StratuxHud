@@ -4,7 +4,7 @@
 
 This project is based on Johns great work and help "Danke"
 
-_*NOTE:*_ This project relies on having a [Stratux](http://stratux.me/) build with AHRS and GPS and a FLARM antenna using this image as of 10/10 2018: https://github.com/PepperJo/stratux/releases/download/v1.4r5-flarm2/stratux-v1.4r5-flarm-588304c8f5.img.zip
+_*NOTE:*_ This project relies on having a [Stratux](http://stratux.me/) build with AHRS and GPS and a FLARM antenna using this image as of 10/10 2018: https://github.com/PepperJo/stratux/releases/download/v1.4r5-flarm2/stratux-v1.4r5-flarm-588304c8f5.img.zip Just make sure you set the system time before the StratuxHud software installation.
 
 
 ### Wearabel HUD
@@ -116,18 +116,22 @@ You may use a number pad as input device. I used velcro to secure the number pad
 | Esc       | Send shutdown commands to both the HUD controller _*and*_ the Stratux        |
 | q         | (_Full keyboard only_) Quit to the command line.                             |
 
-## Software changes to fit better on to the glass
+## Software changes to fit text better (lower) on the glass
 views/altitude.py
-
-views/skid_and_gs.py
 
 views/groundspeed.py
 
 
-Look for "self.__text_y_pos__ = (text_half_height << 2) + \
+"self.__text_y_pos__ = (text_half_height << 2) + \
+            center_y - text_half_height"
+            
+ to
+ 
+ "self.__text_y_pos__ = (text_half_height << 3) + \
             center_y - text_half_height"
 
 ### Software changes on raspberry
+you my need diffrent values these are rough just to get it going
 /boot/config.txt
 
 disable_overscan=1
