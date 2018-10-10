@@ -13,7 +13,7 @@ _*NOTE:*_ This project relies on having a [Stratux](http://stratux.me/) build wi
 
 Using the "AR Glasses" 3.5inches LCD Monitor and a Raspberry Pi 3.
 
-![AR Glasses](media/IMG_2180.JPG)
+![AR Glasses](media/hud_wearable.jpg)
 
 Estimated cost is $230
 
@@ -34,7 +34,9 @@ I use the proximity script since it is less touchy. So you will have to scroll t
 You will also have to make chages in "heads_up_display.py" because I can't find a plus key in Arduino
 
 if event.key in [pygame.K_KP_PLUS, pygame.K_PLUS]:
+
 to 
+
 if event.key in [pygame.K_RIGHT:
 
 Sketch:
