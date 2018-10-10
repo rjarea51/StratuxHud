@@ -4,7 +4,7 @@
 
 This project is based on John’s great work and help "Danke"
 
-_*NOTE:*_ This project relies on having a [Stratux](http://stratux.me/) build with AHRS and GPS and a FLARM antenna using this image as of 10/10 2018: https://github.com/PepperJo/stratux/releases/download/v1.4r5-flarm2/stratux-v1.4r5-flarm-588304c8f5.img.zip Just make sure you set the system time before you start to install the StratuxHud software.
+_*NOTE:*_ This project relies on having a [Stratux](http://stratux.me/) build with AHRS and GPS and a FLARM antenna using this image as of 10/10 2018: https://github.com/PepperJo/stratux/releases/download/v1.4r5-flarm2/stratux-v1.4r5-flarm-588304c8f5.img.zip.
 
 
 ### Wearabel HUD
@@ -110,7 +110,7 @@ void loop() {
 
 ## Software changes to fit text better (lower) on the glass
 
-The text was for me,to high. I left the G-Meter text. I changed and added the value "3" in:
+The text was for me, to high. I left the G-Meter text. I changed and added the value "3" in:
 
 sudo nano /home/pi/StratuxHud/views/altitude.py
 
@@ -158,11 +158,14 @@ Overscan_bottom=-100
 ## Install instructions
 
  **The way it worked for me**
-Install Stratux with or without FLARM image 10/10 2018: https://github.com/PepperJo/stratux/releases/download/v1.4r5-flarm2/stratux-v1.4r5-flarm-588304c8f5.img.zip
+ 
+Install Stratux with or without FLARM. The image I used is in 10/10 2018: https://github.com/PepperJo/stratux/releases/download/v1.4r5-flarm2/stratux-v1.4r5-flarm-588304c8f5.img.zip
+
+Just make sure you set the Raspberry PI system time before you start to install next the StratuxHud software
 
 Install and follow John’s StratuxHud software instructions https://github.com/JohnMarzulli/StratuxHud
 
-Install John’s HudConfig, you will need this web interface in order to mirror the display
+Install John’s HudConfig, you will need this web interface in order to mirror the display for the Hud https://github.com/JohnMarzulli/HudConfig
 
  
 ## License
