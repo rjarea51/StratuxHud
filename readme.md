@@ -13,7 +13,7 @@ _*NOTE:*_ This project relies on having a [Stratux](http://stratux.me/) build wi
 
 Using the "HUDLY Classic" projector and a Raspberry Pi 3.
 
-![HUDLY Version](media/hudly_on_ground.jpg)
+![HUDLY Version](media/IMG_2180.JPG)
 
 Estimated cost is $300
 
