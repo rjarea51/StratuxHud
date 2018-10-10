@@ -1,4 +1,4 @@
-#STRATUX/FLARM HUD (Maturaarbeit/School project 2018)
+#STRATUX/FLARM Wearable HUD (Maturaarbeit/School project 2018)
 
 ## Introduction
 
