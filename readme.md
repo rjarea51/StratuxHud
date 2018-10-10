@@ -23,7 +23,9 @@ Estimated cost is $230
 - $20 for Gesture control from Nevma project
 - $49 for PowerBar
 - $30 Fans, case, cables
+
 (I used an old Flightcom Venture type headset it has to have a screw for adjustment in order to attach the plastic connection piece on either side)
+
 (Requires your aircraft to have a "12 Volt" cigarette power outlet)
 
 
