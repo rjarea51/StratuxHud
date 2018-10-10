@@ -137,8 +137,9 @@ Overscan_bottom=-100
 - [Adafruit DIY HDMI Cable Parts - Straight HDMI Plug Adapter AF3548](https://www.ebay.de/itm/Adafruit-DIY-HDMI-Cable-Parts-Straight-HDMI-Plug-Adapter-AF3548/273042335737?ssPageName=STRK%3AMEBIDX%3AIT&_trksid=p2060353.m2749.l2649)
 - [Adafruit DIY HDMI Cable Parts - Straight HDMI Socket Adapter AF3551](https://www.ebay.de/itm/Adafruit-DIY-HDMI-Cable-Parts-Straight-HDMI-Socket-Adapter-AF3551/273026213365?ssPageName=STRK%3AMEBIDX%3AIT&_trksid=p2060353.m2749.l2649)
 - [Adafruit DIY HDMI Cable Parts - 20 cm HDMI Ribbon Cable AF3561](https://www.ebay.de/itm/Adafruit-DIY-HDMI-Cable-Parts-20-cm-HDMI-Ribbon-Cable-AF3561/282810093975?ssPageName=STRK%3AMEBIDX%3AIT&_trksid=p2060353.m2749.l2649)
-
-
+- [delock kabel usb 2.0 micro-b buchse zum einbau > usb 2.0 micro-b stecker 25 cm](https://www.ebay.de/itm/delock-kabel-usb-2-0-micro-b-buchse-zum-einbau-usb-2-0-micro-b-stecker-25-cm/162698540334?ssPageName=STRK%3AMEBIDX%3AIT&_trksid=p2060353.m2749.l2649)
+- [Virtual Reality VR AR Brille Gläser Arbox Holographischer Effekt 3D](https://www.ebay.de/itm/Virtual-Reality-VR-AR-Brille-Gläser-Arbox-Holographischer-Effekt-3D/382299251509?ssPageName=STRK%3AMEBIDX%3AIT&_trksid=p2060353.m2749.l2649)
+- [Anker PowerCore 20100mAh Externer Akku (Powerbank) mit 2 Ports und 4,8-A-Output](https://www.ebay.de/itm/Anker-PowerCore-20100mAh-Externer-Akku-Powerbank-mit-2-Ports-und-4-8-A-Output/253034763977?ssPageName=STRK%3AMEBIDX%3AIT&_trksid=p2060353.m2749.l2649)
 
 ### Recommended HUDLY Build
 
