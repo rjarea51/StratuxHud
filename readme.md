@@ -35,7 +35,7 @@ In order to change the windows, I use the gesture control project from NEVMA
 https://www.hackster.io/platisd/nevma-gesture-control-for-the-masses-9cff03
 I use the proximity script since it is less touchy in flight. 
 
-So you will have to scroll through the windows. 
+This way you will scroll through the windows quickly. 
 You will also have to make chages in "heads_up_display.py" because I can't find a plus key in Arduino
 
 if event.key in [pygame.K_KP_PLUS, pygame.K_PLUS]:
