@@ -7,7 +7,7 @@ This HUD project is based on John’s great work and help "Danke"
 _*NOTE:*_ This project relies on having a [Stratux](http://stratux.me/) build with AHRS and GPS and a FLARM antenna using this image as of 10/10 2018: https://github.com/PepperJo/stratux/releases/download/v1.4r5-flarm2/stratux-v1.4r5-flarm-588304c8f5.img.zip.
 
 
-### Wearabel HUD
+### Wearable Pilot HUD
 
 Using the "AR Glasses" 3.5inches LCD Monitor and a Raspberry Pi 3.
 
