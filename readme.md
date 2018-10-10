@@ -26,6 +26,8 @@ Estimated cost is $230
 
 (An old bike helmed gave me the head adjustment function for a better and tighter fit)
 
+(The gray stuff is self-adhesive alcantara fabric for car interiors)
+
 (Requires your aircraft to have a "12 Volt" cigarette power outlet)
 
 
