@@ -1,4 +1,4 @@
-# STRATUX HUD
+# School Project STRATUX/FLARM HUD
 
 ## Introduction
 
@@ -6,11 +6,10 @@ This project aims to bring an affordable heads up display system into ANY cockpi
 
 The focus is to improve traffic awareness and to reduce the amount of time pilots reference tablets or an EFB.
 
-_*NOTE:*_ This project relies on having a [Stratux](http://stratux.me/) build with AHRS and GPS. A suitable build can be done for less than $150 (USD).
+_*NOTE:*_ This project relies on having a [Stratux](http://stratux.me/) build with AHRS and GPS and a FLARM antenna using this image as of 10/10 2018: https://github.com/PepperJo/stratux/releases/download/v1.4r5-flarm2/stratux-v1.4r5-flarm-588304c8f5.img.zip
 
-There are two versions that can be built:
 
-### School Project Wearabel HUD
+### Wearabel HUD
 
 Using the "HUDLY Classic" projector and a Raspberry Pi 3.
 
