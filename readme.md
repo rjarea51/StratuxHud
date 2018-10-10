@@ -105,17 +105,6 @@ void loop() {
 
 }
 
-You may use a number pad as input device. I used velcro to secure the number pad to my dashboard.
-
-| Key       | Action                                                                       |
-| --------- | ---------------------------------------------------------------------------- |
-| Backspace | Tell the Stratux that you are in a level position. Resets the AHRS to level. |
-| +         | Next view                                                                    |
-| -         | Previous view                                                                |
-| =         | Toggle rendering debug information                                           |
-| Esc       | Send shutdown commands to both the HUD controller _*and*_ the Stratux        |
-| q         | (_Full keyboard only_) Quit to the command line.                             |
-
 ## Software changes to fit text better (lower) on the glass
 views/altitude.py
 
