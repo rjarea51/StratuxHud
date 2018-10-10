@@ -24,7 +24,7 @@ Estimated cost is $230
 
 (I used an old Flightcom Venture type headset. It has to have a screw for adjustment in order to attach the plastic connection piece on either side)
 
-(An old bike hlemed gave me the head adjustmend function for a better and tighter fit)
+(An old bike helmed gave me the head adjustment function for a better and tighter fit)
 
 (Requires your aircraft to have a "12 Volt" cigarette power outlet)
 
