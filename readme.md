@@ -106,6 +106,9 @@ void loop() {
 }
 
 ## Software changes to fit text better (lower) on the glass
+
+The text was for me to high. I left G-Meterand. I changed and added in:
+
 views/altitude.py
 
 views/groundspeed.py
@@ -120,7 +123,7 @@ views/groundspeed.py
             center_y - text_half_height"
 
 ### Software changes on raspberry
-you my need diffrent values these are rough just to get it going
+you my need diffrent values these are just rough to get you going
 /boot/config.txt
 
 disable_overscan=1
