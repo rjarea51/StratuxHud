@@ -30,13 +30,14 @@ Estimated cost is $300
 ## In Flight Controls
 In order to change the windows I use the gesture control project from NEVMA
 https://www.hackster.io/platisd/nevma-gesture-control-for-the-masses-9cff03
-I use the proximity script since it is less touchy. So you will have to scroll through the windows 
-You will also have to chage in "heads_up_display.py" becouse I cont find a plus key in Arduino
+I use the proximity script since it is less touchy. So you will have to scroll through the windows. 
+You will also have to make chages in "heads_up_display.py" because I can't find a plus key in Arduino
 
 if event.key in [pygame.K_KP_PLUS, pygame.K_PLUS]:
 to 
 if event.key in [pygame.K_RIGHT:
 
+Sketch:
 
 #include <SparkFun_APDS9960.h>
 #include <Keyboard.h>
