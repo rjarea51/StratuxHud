@@ -110,11 +110,11 @@ void loop() {
 
 ## Software changes to fit text better (lower) on the glass
 
-The text was for me to high. I left G-Meterand. I changed and added in:
+The text was for me,to high. I left the G-Meter text. I changed and added the value "3" in:
 
-views/altitude.py
+sudo nano /home/pi/StratuxHud/views/altitude.py
 
-views/groundspeed.py
+sudo nano /home/pi/StratuxHud/views/groundspeed.py
 
 
 "self.__text_y_pos__ = (text_half_height << 2) + \
@@ -127,7 +127,7 @@ views/groundspeed.py
 
 ### Software changes on raspberry
 
-you my need diffrent values these are just rough to get you going
+you my need diffrent values these are just rough for now
 
 sudo nano /boot/config.txt
 
