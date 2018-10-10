@@ -30,9 +30,9 @@ Estimated cost is $230
 
 
 ## In Flight Controls
-In order to change the windows I use the gesture control project from NEVMA
+In order to change the windows, I use the gesture control project from NEVMA
 https://www.hackster.io/platisd/nevma-gesture-control-for-the-masses-9cff03
-I use the proximity script since it is less touchy. So you will have to scroll through the windows. 
+I use the proximity script since it is less touchy in flight. So you will have to scroll through the windows. 
 You will also have to make chages in "heads_up_display.py" because I can't find a plus key in Arduino
 
 if event.key in [pygame.K_KP_PLUS, pygame.K_PLUS]:
@@ -142,7 +142,6 @@ Overscan_bottom=-100
 
 ## Parts List HUD only
 
-- [Rottay Mechanical Keypad](https://www.amazon.com/Number-Rottay-Mechanical-Numeric-backlit/dp/B076FTSY6J/ref=sr_1_3?ie=UTF8&qid=1529215627&sr=8-3&keywords=mechanical+keypad)
 - [NEVMA New Mini ATMEGA32U4 Module Board Compatible For Arduino SS Micro ATMEGA32U4](https://www.ebay.de/itm/New-Mini-ATMEGA32U4-Module-Board-Compatible-For-Arduino-SS-Micro-ATMEGA32U4/272546371430?ssPageName=STRK%3AMEBIDX%3AIT&_trksid=p2060353.m2749.l2649)
 - [NEVMA GY-9960LLC APDS-9960 RGB and Gesture Sensor Module I2C Breakout for Arduino](https://www.amazon.com/Number-Rottay-Mechanical-Numeric-backlit/dp/B076FTSY6J/ref=sr_1_3?ie=UTF8&qid=1529215627&sr=8-3&keywords=mechanical+keypad)
 - [NEVMA PCB](https://www.pcbway.com/project/shareproject/Nevma__Gesture_control_for_the_masses.html)
