@@ -128,6 +128,7 @@ views/groundspeed.py
 ### Software changes on raspberry
 
 you my need diffrent values these are just rough to get you going
+
 sudo nano /boot/config.txt
 
 disable_overscan=1
