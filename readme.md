@@ -10,7 +10,7 @@ _*NOTE:*_ This project relies on having a [Stratux](http://stratux.me/) build wi
 
 There are two versions that can be built:
 
-### Recommended
+### School Project Wearabel HUD
 
 Using the "HUDLY Classic" projector and a Raspberry Pi 3.
 
@@ -24,25 +24,79 @@ Estimated cost is $300
 
 Requires your aircraft to have a "12 Volt" cigarette power outlet.
 
-### Alternative, Less Expensive Version
-
-A self contained system that uses a 3D printed case and teleprompter glass. This version can be built for the cost of a Raspberry Pi and the 3D print.
-
-_NOTE:_ This version does have visibility issues in daylight conditions. The HUDLY Version is fully daylight visible.
-
-![Teleprompter Glass Version In Flight](media/in_flight.jpg)
-
-Estimated Cost is $140
-
-- $40 for a RaspberryPi 3
-- $45 for the LCD screen
-- $20 for Teleprompter Glass and shipping.
-- Cost of 3D printing the special case.
-- Cables
-
-Can be powered by a USB powerbank or USB power.
 
 ## In Flight Controls
+In order to change the windows I use the gesture control project from NEVMA
+https://www.hackster.io/platisd/nevma-gesture-control-for-the-masses-9cff03
+I use the proximity script since it is less touchy. So you will have to scroll through the windows 
+You will also have to chage in "heads_up_display.py" becouse I cont find a plus key in Arduino
+
+if event.key in [pygame.K_KP_PLUS, pygame.K_PLUS]:
+to 
+if event.key in [pygame.K_RIGHT:
+
+
+#include <SparkFun_APDS9960.h>
+#include <Keyboard.h>
+// Global Variables
+SparkFun_APDS9960 apds = SparkFun_APDS9960();
+uint8_t proximity_data = 0;
+int LED_PIN = 3; // JJD LED for if then
+
+void setup() {
+
+pinMode(LED_PIN,OUTPUT); //configure LED_PIN as OUTPUT 
+
+ 
+ // Initialize Serial port
+ Serial.begin(9600);
+ Serial.println();
+ Serial.println(F("------------------------------------"));
+ Serial.println(F("SparkFun APDS-9960 - ProximitySensor"));
+ Serial.println(F("------------------------------------"));
+ 
+ // Initialize APDS-9960 (configure I2C and initial values)
+ if ( apds.init() ) {
+ Serial.println(F("APDS-9960 initialization complete"));
+ } else {
+ Serial.println(F("Something went wrong during APDS-9960 init!"));
+ }
+ 
+ // Adjust the Proximity sensor gain
+ if ( !apds.setProximityGain(PGAIN_2X) ) {
+ Serial.println(F("Something went wrong trying to set PGAIN"));
+ }
+ 
+ // Start running the APDS-9960 proximity sensor (no interrupts)
+ if ( apds.enableProximitySensor(false) ) {
+ Serial.println(F("Proximity sensor is now running"));
+ } else {
+ Serial.println(F("Something went wrong during sensor init!"));
+ }
+}
+
+void loop() {
+ 
+ // Read the proximity value
+ if ( !apds.readProximity(proximity_data) ) {
+ Serial.println("Error reading proximity value");
+ 
+ } else {
+
+ }
+//Max value is 255 to make it more or less sensetive change the value in WINDOW OFF, Proximity under and WINDOW ON!! Proximity over 
+ if ( proximity_data < 100 ) {
+ Serial.print("WINDOW OFF, Proximity under 100: ");
+ Serial.println(proximity_data); 
+ Keyboard.releaseAll();
+ } else {
+ Serial.print("WINDOW ON!! Proximity over 100: ");
+ Serial.println(proximity_data);
+ Keyboard.press(KEY_RIGHT_ARROW);
+ }
+ delay(600);
+
+}
 
 You may use a number pad as input device. I used velcro to secure the number pad to my dashboard.
 
