@@ -1,10 +1,8 @@
-#STRATUX/FLARM HUD (Maturaarbeit 2018)
+#STRATUX/FLARM HUD (Maturaarbeit/School project 2018)
 
 ## Introduction
 
-This project aims to bring an affordable heads up display system into ANY cockpit.
-
-The focus is to improve traffic awareness and to reduce the amount of time pilots reference tablets or an EFB.
+This project is based on Johns great work and help "Danke"
 
 _*NOTE:*_ This project relies on having a [Stratux](http://stratux.me/) build with AHRS and GPS and a FLARM antenna using this image as of 10/10 2018: https://github.com/PepperJo/stratux/releases/download/v1.4r5-flarm2/stratux-v1.4r5-flarm-588304c8f5.img.zip
 
@@ -25,6 +23,8 @@ Estimated cost is $230
 - $30 Cables / plastic for side pieces / srews
 
 (I used an old Flightcom Venture type headset it has to have a screw for adjustment in order to attach the plastic connection piece on either side)
+
+(An old bike hlemed gave me the head adjustmend function for a tighter fit)
 
 (Requires your aircraft to have a "12 Volt" cigarette power outlet)
 
