@@ -4,7 +4,7 @@
 
 This project is based on Johns great work and help "Danke"
 
-_*NOTE:*_ This project relies on having a [Stratux](http://stratux.me/) build with AHRS and GPS and a FLARM antenna using this image as of 10/10 2018: https://github.com/PepperJo/stratux/releases/download/v1.4r5-flarm2/stratux-v1.4r5-flarm-588304c8f5.img.zip Just make sure you set the system time before the StratuxHud software installation.
+_*NOTE:*_ This project relies on having a [Stratux](http://stratux.me/) build with AHRS and GPS and a FLARM antenna using this image as of 10/10 2018: https://github.com/PepperJo/stratux/releases/download/v1.4r5-flarm2/stratux-v1.4r5-flarm-588304c8f5.img.zip Just make sure you set the system time before you start to install the StratuxHud software.
 
 
 ### Wearabel HUD
@@ -24,15 +24,18 @@ Estimated cost is $230
 
 (I used an old Flightcom Venture type headset. It has to have a screw for adjustment in order to attach the plastic connection piece on either side)
 
-(An old bike hlemed gave me the head adjustmend function for a tighter fit)
+(An old bike hlemed gave me the head adjustmend function for a better and tighter fit)
 
 (Requires your aircraft to have a "12 Volt" cigarette power outlet)
 
 
 ## In Flight Controls
+
 In order to change the windows, I use the gesture control project from NEVMA
 https://www.hackster.io/platisd/nevma-gesture-control-for-the-masses-9cff03
-I use the proximity script since it is less touchy in flight. So you will have to scroll through the windows. 
+I use the proximity script since it is less touchy in flight. 
+
+So you will have to scroll through the windows. 
 You will also have to make chages in "heads_up_display.py" because I can't find a plus key in Arduino
 
 if event.key in [pygame.K_KP_PLUS, pygame.K_PLUS]:
@@ -123,8 +126,9 @@ views/groundspeed.py
             center_y - text_half_height"
 
 ### Software changes on raspberry
+
 you my need diffrent values these are just rough to get you going
-/boot/config.txt
+sudo nano /boot/config.txt
 
 disable_overscan=1
 
