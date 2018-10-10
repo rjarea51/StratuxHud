@@ -18,8 +18,8 @@ Using the "AR Glasses" 3.5inches LCD Monitor and a Raspberry Pi 3.
 Estimated cost is $300
 
 - $40 for RaspberryPi 3
-- $49 for AR Glasses https://www.ebay.de/itm/Virtual-Reality-VR-AR-Brille-Gläser-Arbox-Holographischer-Effekt-3D/382299251509?ssPageName=STRK%3AMEBIDX%3AIT&_trksid=p2060353.m2749.l2649
-- $39 for 3.5inch RPi LCD https://www.waveshare.com/wiki/3.5inch_RPi_LCD_(A)
+- $49 for AR Glasses 
+- $39 for 3.5inch RPi LCD 
 - $20 for Gesture control from Nevma project
 - $49 for PowerBar
 - Fans, case, cables
