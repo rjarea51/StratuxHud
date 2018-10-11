@@ -158,6 +158,10 @@ This list includes Chinese German and Swiss suppliers only:
 - [Anker PowerCore 20100mAh Externer Akku (Powerbank) mit 2 Ports und 4,8-A-Output](https://www.ebay.de/itm/Anker-PowerCore-20100mAh-Externer-Akku-Powerbank-mit-2-Ports-und-4-8-A-Output/253034763977?ssPageName=STRK%3AMEBIDX%3AIT&_trksid=p2060353.m2749.l2649)
 - [Waveshare 3.5inch HDMI LCD, 480x320, IPS](https://www.pi-shop.ch/waveshare-3-5inch-hdmi-lcd-480x320-ips)
 
+I recently found this monitor
+
+- [OSOYOO Touch Screen LCD Monitor HDMI Display 3.5"](https://www.amazon.com/OSOYOO-Monitor-Display-Instructions-Raspberry/dp/B01N447AEY)
+
 ### HUD Build
 
 ## Install instructions
