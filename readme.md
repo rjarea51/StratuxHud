@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This Pilot HUD project is based on John’s great work and help "Danke"
+This DIY Pilot HUD project is based on John’s great work and help "Danke"
 
 _*Caution:*_ Getting used to the HUD in flight might take some time, so taking a safety pilot or instructor with you is strongly recommended. Use the Wearable Pilot HUD at your own risk and enjoy.
 
