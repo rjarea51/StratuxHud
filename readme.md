@@ -195,13 +195,13 @@ Install John’s HudConfig, you will need this web interface in order to mirror 
 
 8.	Attach the monitor to the AR Glasses by inserting the top first and then by pushing the GPIO between the two bolds. I used very small long cable binder which fit through the middle of the GPIO and around the two bold in order to fix the monitor to the frame
 
-9.	Attach ribbon to HDMI socket and plug in pins on 2 and 4
+9.	Attach ribbon to HDMI socket and plug in the USB cbale in GPIO pins on 2 and 4 (lower row from the left side)
 
-10.	Close it up and (use at own risk) meld a hole through the middle lower connection point and secure it with a screw since it will snap open quite easily without it.
+10.	Close it up and (use at own risk) melt a hole through the middle lower connection point and secure it with a screw since it will snap open quite easily without it.
 
-11.	I mounted the gesture control sensor on the passenger side directly on the connection plastic between the headset and the AR glasses USB port point up
+11.	I mounted the gesture control sensor on the passenger side directly on to the connection plastic between the headset and the AR glasses. USB plug pointing up
 
-12.	I attached the bike helmet strap on the frame of the headset with very strong thread
+12.	I attached the bike helmet strap on the back frame of the headset with very strong thread
 
  
 ## License
