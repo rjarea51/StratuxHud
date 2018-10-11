@@ -30,7 +30,7 @@ Estimated cost is $230
 
 (The gray stuff is self-adhesive alcantara fabric for car interiors)
 
-(Requires your aircraft to have a "12 Volt" cigarette power outlet)
+(Requires your aircraft to have a "12 Volt" cigarette power outlet or sizeable powerbar)
 
 
 ## In Flight Controls
