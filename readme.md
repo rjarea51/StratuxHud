@@ -1,10 +1,10 @@
-#STRATUX/FLARM Wearable HUD (Maturaarbeit/School project 2018)
+#STRATUX/FLARM Wearable Pilot HUD (Maturaarbeit/School project 2018)
 
 ## Introduction
 
-This HUD project is based on John’s great work and help "Danke"
+This Pilot HUD project is based on John’s great work and help "Danke"
 
-_*Caution:*_ Getting used to the HUD in flight might take some time, so taking a safety pilot or instructor with you is strongly recommended. Use the Wearable HUD at your own risk and enjoy.
+_*Caution:*_ Getting used to the HUD in flight might take some time, so taking a safety pilot or instructor with you is strongly recommended. Use the Wearable Pilot HUD at your own risk and enjoy.
 
 _*NOTE:*_ This project relies on having a [Stratux](http://stratux.me/) build with AHRS and GPS and a FLARM antenna using this image as of 10/10 2018: https://github.com/PepperJo/stratux/releases/download/v1.4r5-flarm2/stratux-v1.4r5-flarm-588304c8f5.img.zip.
 
