@@ -192,6 +192,7 @@ Install John’s HudConfig, you will need this web interface in order to mirror 
 5.	I mounted the monitor on the outside of the holder because of alignment issues with the glass. Using the center plastic divider piece as a guide, I marked the HDMI and the USB ports on top and on the bottom left and right of the monitor GPIO. Cut out the two spaces for the ports and (use at own risk) melt two holes with a small awl, for an M2 bolt with about 2-2.5 cm length. On either side of the GPIO and mount the bolts with a nut to the black frame.
 
 ![Monitor](media/step5.jpg)
+![Monitor](media/step5-1.jpg)
 
 6.	I did not want to connect to the monitor directly to the raspberry, just in case I get the cables tangled in the cockpit and rip out the ports. So I bought a micro-USB cable for an installation in a case “delock kabel usb 2.0 micro-b buchse zum einbau” and solder two pins on it (USB port fell off during testing). I also bought a ribbon and Adafruit socket and plug for it. I attached the HDMI socket and micro-USB socket together with hot glue and a very small cable binder. I cut out a cover for the sockets and attached the cover with bolds to the connection sockets. In the middle of the glasses is a large hole where you can hot glue cover bracket with the socket on it and run the cable in side to the monitor.
 
