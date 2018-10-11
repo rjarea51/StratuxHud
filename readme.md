@@ -166,7 +166,7 @@ I recently found this monitor
 
 ### HUD Build
 
-## Install instructions
+## Install instructions Software
 
  **The way it worked for me**
  
@@ -177,6 +177,31 @@ Just make sure you set the Raspberry PI system time before you start to install 
 Install and follow John’s StratuxHud software instructions https://github.com/JohnMarzulli/StratuxHud
 
 Install John’s HudConfig, you will need this web interface in order to mirror the display for the Hud https://github.com/JohnMarzulli/HudConfig
+
+## Install instructions Hardware
+1.	Cut out the plastic connection piece out of mendable and non-brittle material 
+
+2.	(use at on risk) Heat up M4 Steel T Nuts / Captive nuts, use a long bolt with a lot of tape on the end of it and slowly press the nut into the plastic of the AR Glasses
+
+3.	Cut glass in half, by using a lot of masking tape to give you an edge for cutting. Edge out a grove. Be careful not to scratch the glass. (use at own risk) Heat up the blade tip of a metal xacto knife and cut through the plastic. Sand the edges smooth afterwards
+
+4.	(use at own risk) With a small awl or large needle put the glass in the black plastic glass holder and meld a hole through the glass and the holder so that you can mount the glass with a very small screw on both sides
+
+5.	I mounted the monitor on the outside of the holder because of alignment issues with the glass. Using the center plastic divider piece as a guide, I marked the HDMI and the USB ports on top and on the bottom left and right of the monitor GPIO. Cut out the two spaces for the ports and (use at own risk) melt two holes with a small awl, for an M2 bolt with about 2-2.5 cm length. On either side of the GPIO and mount the bolts with a nut to the black frame.
+
+6.	I did not want to connect to the monitor directly to the raspberry, just in case I get the cables tangled in the cockpit and rip out the ports. So I bought a micro-USB cable for an installation in a case “delock kabel usb 2.0 micro-b buchse zum einbau” and solder two pins on it (USB port fell off during testing). I also bought a ribbon and Adafruit socket and plug for it. I attached the HDMI socket and micro-USB socket together with hot glue and a very small cable binder. I cut out a cover for the sockets and attached the cover with bolds to the connection sockets. In the middle of the glasses is a large hole where you can hot glue cover bracket with the socket on it and run the cable in side to the monitor.
+
+7.	Bend very slowly the Adafruit HDMI plug so it has the same angle as the plastic frame of the AR Glasses
+
+8.	Attach the monitor to the AR Glasses by inserting the top first and then by pushing the GPIO between the two bolds. I used very small long cable binder which fit through the middle of the GPIO and around the two bold in order to fix the monitor to the frame
+
+9.	Attach ribbon to HDMI socket and plug in pins on 2 and 4
+
+10.	Close it up and (use at own risk) meld a hole through the middle lower connection point and secure it with a screw since it will snap open quite easily without it.
+
+11.	I mounted the gesture control sensor on the passenger side directly on the connection plastic between the headset and the AR glasses USB port point up
+
+12.	I attached the bike helmet strap on the frame of the headset with very strong thread
 
  
 ## License
