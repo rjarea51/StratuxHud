@@ -183,7 +183,7 @@ Install John’s HudConfig, you will need this web interface in order to mirror 
 
 2.	(use at on risk) Heat up M4 Steel T Nuts / Captive nuts, use a long bolt with a lot of tape on the end of it and slowly press the nut into the plastic of the AR Glasses
 
-(media/step2.jpg)
+![Captive nuts](media/step2.jpg)
 
 3.	Cut glass in half, by using a lot of masking tape to give you an edge for cutting. Edge out a grove. Be careful not to scratch the glass. (use at own risk) Heat up the blade tip of a metal xacto knife and cut through the plastic. Sand the edges smooth afterwards
 
