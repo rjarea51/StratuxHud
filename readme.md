@@ -213,7 +213,7 @@ Install John’s HudConfig, you will need this web interface in order to mirror 
 
 12.	I attached the bike helmet strap on the back frame of the headset with very strong thread
 
-13.	View splitter for right eye. I got a free sample from www.velken.de Art.-Nr. 111030 Sonnenschutzfolie (you also can use a very thin plastic). Cut it to shape as shown in the image and attach it with double sticking tape on the side of the monitor. It helps to eliminated distortion through the right eye.
+13.	View splitter for the right eye. I got a free sample from www.velken.de Art.-Nr. 111030 Sonnenschutzfolie (you can also use a very thin plastic). Cut it to shape as shown in the image and attach it with double sticking tape on to the side of the monitor. It helps to eliminated viewing distortion through the right eye.
 
 ![splitter](media/splitter.jpg)
  
