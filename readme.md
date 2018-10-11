@@ -196,6 +196,8 @@ Install John’s HudConfig, you will need this web interface in order to mirror 
 
 6.	I did not want to connect to the monitor directly to the raspberry, just in case I get the cables tangled in the cockpit and rip out the ports. So I bought a micro-USB cable for an installation in a case “delock kabel usb 2.0 micro-b buchse zum einbau” and solder two pins on it (USB port fell off during testing). I also bought a ribbon and Adafruit socket and plug for it. I attached the HDMI socket and micro-USB socket together with hot glue and a very small cable binder. I cut out a cover for the sockets and attached the cover with bolds to the connection sockets. In the middle of the glasses is a large hole where you can hot glue cover bracket with the socket on it and run the cable in side to the monitor.
 
+![connector](media/step7.jpg)
+
 7.	Bend very slowly the Adafruit HDMI plug so it has the same angle as the plastic frame of the AR Glasses
 
 8.	Attach the monitor to the AR Glasses by inserting the top first and then by pushing the GPIO between the two bolds. I used very small long cable binder which fit through the middle of the GPIO and around the two bold in order to fix the monitor to the frame
