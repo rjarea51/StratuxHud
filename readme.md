@@ -179,7 +179,7 @@ Install and follow John’s StratuxHud software instructions https://github.com/
 Install John’s HudConfig, you will need this web interface in order to mirror the display for the Hud https://github.com/JohnMarzulli/HudConfig
 
 ## Install instructions Hardware
-1.	Cut out the plastic connection piece out of mendable and non-brittle material 
+1.	Cut out the plastic connection piece out of mendable and non-brittle material media/RJ glasses mountv4.skp
 
 2.	(use at on risk) Heat up M4 Steel T Nuts / Captive nuts, use a long bolt with a lot of tape on the end of it and slowly press the nut into the plastic of the AR Glasses
 
