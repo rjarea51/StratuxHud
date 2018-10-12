@@ -15,9 +15,8 @@ Using the "AR Glasses" 3.5inches LCD Monitor and a Raspberry Pi 3.
 
 ![AR Glasses](media/hud_wearable.jpg)
 
-Estimated cost is $230
+Estimated cost is $187
 
-- $40 for RaspberryPi 3
 - $49 for AR Glasses 
 - $39 for 3.5inch RPi LCD 
 - $20 for Gesture control from Nevma project
@@ -174,9 +173,13 @@ Install Stratux with or without FLARM. The image I used is in 10/10 2018: https:
 
 Just make sure you set the Raspberry PI system time before you start to install next the StratuxHud software
 
-Install and follow John’s StratuxHud software instructions https://github.com/JohnMarzulli/StratuxHud
+Install and follow John’s StratuxHud software instructions 
 
-Install John’s HudConfig, you will need this web interface in order to mirror the display for the Hud https://github.com/JohnMarzulli/HudConfig
+https://github.com/JohnMarzulli/StratuxHud
+
+Install John’s HudConfig, you will need this web interface in order to mirror the display for the Hud " Flip Horizontal"
+
+https://github.com/JohnMarzulli/HudConfig
 
 ## Install instructions Hardware
 1.	Cut out the plastic connection piece out of mendable and non-brittle material (Download Sketchup file: media/RJ glasses mountv4.skp)
