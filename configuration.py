@@ -141,9 +141,8 @@ class Configuration(object):
         if json_config is None:
             return
 
-        if Configuration.STRATUX_ADDRESS_KEY in json_config:
-            self.__configuration__[
-                Configuration.STRATUX_ADDRESS_KEY] = json_config[Configuration.STRATUX_ADDRESS_KEY]
+        set_from_maps = [Configuration.STRATUX_ADDRESS_KEY,
+                         Configuration.DATA_SOURCE_KEY]
 
         if Configuration.DATA_SOURCE_KEY in json_config:
             self.__configuration__[
