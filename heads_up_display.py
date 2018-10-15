@@ -540,7 +540,7 @@ class HeadsUpDisplay(object):
         if event.key in [pygame.K_q]:
             return False
 
-        if event.key in [pygame.K_KP_PLUS, pygame.K_PLUS]:
+        if event.key in [pygame.K_RIGHT]:
             self.__view_index__ += 1
 
         if event.key in [pygame.K_KP_MINUS, pygame.K_MINUS]:
