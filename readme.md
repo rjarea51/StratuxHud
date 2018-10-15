@@ -163,6 +163,11 @@ I recently found this monitor
 
 - [OSOYOO Touch Screen LCD Monitor HDMI Display 3.5"](https://www.amazon.com/OSOYOO-Monitor-Display-Instructions-Raspberry/dp/B01N447AEY)
 
+## Hardware Improvement
+
+Better FLARM antenna
+http://www.gliderdesignparts.de/ant_flarm.html
+
 ### HUD Build
 
 ## Install instructions Software
