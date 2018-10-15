@@ -144,21 +144,21 @@ class Configuration(object):
         set_from_maps = [Configuration.STRATUX_ADDRESS_KEY,
                          Configuration.DATA_SOURCE_KEY]
 
-        if Configuration.DATA_SOURCE_KEY in json_config:
-            self.__configuration__[
-                Configuration.DATA_SOURCE_KEY] = json_config[Configuration.DATA_SOURCE_KEY]
+        for key in set_from_maps:
+            if key in json_config:
+                self.__configuration__[key] = json_config[key]
 
         if Configuration.FLIP_HORIZONTAL_KEY in json_config:
-            self.flip_horizontal = bool(
-                json_config[Configuration.FLIP_HORIZONTAL_KEY])
-            self.__configuration__[
-                Configuration.FLIP_HORIZONTAL_KEY] = self.flip_horizontal
+            self.flip_horizontal = \
+                bool(json_config[Configuration.FLIP_HORIZONTAL_KEY])
+            self.__configuration__[Configuration.FLIP_HORIZONTAL_KEY] = \
+                self.flip_horizontal
 
         if Configuration.FLIP_VERTICAL_KEY in json_config:
-            self.flip_vertical = bool(
-                json_config[Configuration.FLIP_VERTICAL_KEY])
-            self.__configuration__[
-                Configuration.FLIP_VERTICAL_KEY] = self.flip_vertical
+            self.flip_vertical = \
+                bool(json_config[Configuration.FLIP_VERTICAL_KEY])
+            self.__configuration__[Configuration.FLIP_VERTICAL_KEY] = \
+                self.flip_vertical
 
         if Configuration.OWNSHIP_KEY in json_config:
             self.ownship = json_config[Configuration.OWNSHIP_KEY]
@@ -268,21 +268,20 @@ class Configuration(object):
         #   "declination": 0.0
 
         try:
-            self.flip_horizontal = self.__configuration__[
-                Configuration.FLIP_HORIZONTAL_KEY]
+            self.flip_horizontal = \
+                self.__configuration__[Configuration.FLIP_HORIZONTAL_KEY]
         except:
             pass
 
         try:
-            self.flip_vertical = self.__configuration__[
-                Configuration.FLIP_VERTICAL_KEY]
+            self.flip_vertical = \
+                self.__configuration__[Configuration.FLIP_VERTICAL_KEY]
         except:
             pass
 
         try:
-            self.declination = float(self.__configuration__[
-                Configuration.DECLINATION_KEY
-            ])
+            self.declination = \
+                float(self.__configuration__[Configuration.DECLINATION_KEY])
         except:
             pass
 
