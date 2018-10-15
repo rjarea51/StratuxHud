@@ -298,7 +298,7 @@ class HeadsUpDisplay(object):
             if use_detail_font:
                 font = self.__detail_font__
 
-            return hud_element_class(HeadsUpDisplay.DEGREES_OF_PITCH,
+            return hud_element_class(CONFIGURATION.get_degrees_of_pitch(),
                                      self.__pixels_per_degree_y__, font, (self.__width__, self.__height__))
         except Exception as e:
             self.warn("Unable to build element {0}:{1}".format(
@@ -394,11 +394,18 @@ class HeadsUpDisplay(object):
         self.__last_perf_render__ = None
         self.__logger__ = logger
         self.__view_element_timers = {}
-
-        self.render_perf = TaskTimer("Render")
-        self.orient_perf = TaskTimer("Orient")
-        self.cache_perf = TaskTimer("Cache")
-
+        self.__fps__ = RollingStats('FPS')
+        self.__texture_cache_size__ = RollingStats('TextureCacheSize')
+        self.__texture_cache_misses__ = RollingStats('TextureCacheMisses')
+        self.__texture_cache_purges__ = RollingStats('TextureCachePurges')
+        self.render_perf = TaskTimer('Render')
+        self.frame_setup = TaskTimer('Setup')
+        self.frame_cleanup = TaskTimer('Cleanup')
+        self.__frame_timers__ = {'Setup': self.frame_setup,
+                                 'Render': self.render_perf, 'Cleanup': self.frame_cleanup}
+        self.cache_perf = TaskTimer('Cache')
+        self.__fps__.push(0)
+          
         adsb_traffic_address = "ws://{0}/traffic".format(
             CONFIGURATION.stratux_address())
         self.__connection_manager__ = traffic.ConnectionManager(
@@ -427,8 +434,8 @@ class HeadsUpDisplay(object):
 
         self.__aircraft__ = Aircraft()
 
-        self.__pixels_per_degree_y__ = (
-            self.__height__ / HeadsUpDisplay.DEGREES_OF_PITCH) * HeadsUpDisplay.PITCH_DEGREES_DISPLAY_SCALER
+        self.__pixels_per_degree_y__ = int((self.__height__ / CONFIGURATION.get_degrees_of_pitch()) *
+                                           CONFIGURATION.get_pitch_degrees_display_scaler())
 
         self.__ahrs_not_available_element__ = self.__build_ahrs_hud_element(
             ahrs_not_available.AhrsNotAvailable)
@@ -463,7 +470,8 @@ class HeadsUpDisplay(object):
         texture = self.__loading_font__.render("BOOTING", True, display.RED)
         text_width, text_height = texture.get_size()
 
-        self.__backpage_framebuffer__.blit(texture, ((
+        surface = pygame.display.get_surface()
+        surface.blit(texture, ((
             self.__width__ >> 1) - (text_width >> 1), self.__detail_font__.get_height()))
 
         y = (self.__height__ >> 2) + (self.__height__ >> 3)
@@ -477,12 +485,12 @@ class HeadsUpDisplay(object):
         texture = self.__detail_font__.render(
             'Version {}'.format(VERSION), True, display.GREEN)
         text_width, text_height = texture.get_size()
-        self.__backpage_framebuffer__.blit(texture, ((
+        surface.blit(texture, ((
             self.__width__ >> 1) - (text_width >> 1), self.__height__ - text_height))
 
         flipped = pygame.transform.flip(
-            self.__backpage_framebuffer__, CONFIGURATION.flip_horizontal, CONFIGURATION.flip_vertical)
-        self.__backpage_framebuffer__.blit(flipped, [0, 0])
+        surface, CONFIGURATION.flip_horizontal, CONFIGURATION.flip_vertical)
+        surface.blit(flipped, [0, 0])
         pygame.display.flip()
 
     def __handle_input__(self):
@@ -538,10 +546,6 @@ class HeadsUpDisplay(object):
         if event.key in [pygame.K_KP_MINUS, pygame.K_MINUS]:
             self.__view_index__ -= 1
 
-        if event.key in [pygame.K_r]:
-            self.render_perf.reset()
-            self.orient_perf.reset()
-            self.cache_perf.reset()
 
         if event.key in [pygame.K_BACKSPACE]:
             self.__level_ahrs__()
