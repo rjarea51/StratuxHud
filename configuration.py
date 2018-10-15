@@ -8,7 +8,7 @@ EARTH_RADIUS_KILOMETERS_MILES = 6371
 MAX_MINUTES_BEFORE_REMOVING_TRAFFIC_REPORT = 2
 MAX_FRAMERATE = 60
 
-VERSION = "1.2.0"
+VERSION = "1.3.0"
 
 __config_file__ = './config.json'
 __heading_bugs_file__ = './heading_bugs.json'
@@ -116,7 +116,9 @@ class Configuration(object):
             Configuration.OWNSHIP_KEY: self.ownship,
             Configuration.MAX_MINUTES_BEFORE_REMOVING_TRAFFIC_REPORT_KEY: self.max_minutes_before_removal,
             Configuration.DISTANCE_UNITS_KEY: self.get_units(),
-            Configuration.DECLINATION_KEY: self.get_declination()
+            Configuration.DECLINATION_KEY: self.get_declination(),
+            Configuration.DEGREES_OF_PITCH_KEY: self.get_degrees_of_pitch(),
+            Configuration.PITCH_DEGREES_DISPLAY_SCALER_KEY: self.get_pitch_degrees_display_scaler()
         }
 
         return json.dumps(config_dictionary, indent=4, sort_keys=True)
