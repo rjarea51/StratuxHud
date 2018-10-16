@@ -56,10 +56,10 @@ class StratuxStatus(object):
             except:
                 self.__status_json__ = {}
 
-
             self.cpu_temp = self.__get_status__('CPUTemp')
             self.satellites_locked = self.__get_status__(
                 'GPS_satellites_locked')
+
 
 class StratuxCapabilities(object):
     """
@@ -263,12 +263,10 @@ class AhrsStratux(object):
     def __get_value__(self, ahrs_json, key, default):
         """
         Safely return the value from the AHRS blob
-
         Arguments:
             ahrs_json {[type]} -- [description]
             key {[type]} -- [description]
             default {[type]} -- [description]
-
         Returns:
             [type] -- [description]
         """
@@ -292,6 +290,7 @@ class AhrsStratux(object):
 
         values = [self.__get_value__(ahrs_json, key, default) for key in keys]
         values = filter(lambda x: x != default, values)
+
         return values[0] if values is not None and len(values) > 0 else default
 
     def update(self):
