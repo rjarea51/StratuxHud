@@ -45,7 +45,7 @@ if event.key in [pygame.K_KP_PLUS, pygame.K_PLUS]:
 
 to 
 
-if event.key in [pygame.K_RIGHT:
+if event.key in [pygame.K_RIGHT]:
 
 Sketch:
 
