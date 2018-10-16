@@ -130,7 +130,7 @@ sudo nano /home/pi/StratuxHud/views/groundspeed.py
 
 ### Software changes on raspberry
 
-you my need diffrent values these are just rough for now
+you may need diffrent values these are just rough for now
 
 sudo nano /boot/config.txt
 
