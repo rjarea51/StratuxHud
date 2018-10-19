@@ -275,7 +275,6 @@ Plug the 978 MHz SDR back in.
 
 # shutdown -r now
 
-
 Assignment of USB Ports Automatic
 
 Stratux has a script to automate this process of setting the SDR Serials.
