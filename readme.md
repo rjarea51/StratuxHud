@@ -231,25 +231,25 @@ https://github.com/JohnMarzulli/HudConfig
 
 ## ADS-B/Flarm Anntena Reception optimisation/proraming
 
-„Das ganze geht auch nur über ssh:
+„The whole thing works over ssh:
 
 Stxstop
 
-kal -d 0 -b GSM900 -c 45 -g 0 (damit wird das 1.PPM gemessen)
+kal -d 0 -b GSM900 -c 45 -g 0 (with this the PPM 1 is measured)
 
-kal -d 1 -b GSM900 -c 45 -g 0 (damit wird das 2.PPM gemessen)
+kal -d 1 -b GSM900 -c 45 -g 0 (with this the PPM 2 is measured)
 
-das Ergebnis ist das einzustellende 1.PPM, z.B. 27, das 2.PPM z.B. 19
+The result is to be adjusted for 1.PPM, e.g.= 27, and the result 2.PPM e.g.= 19
 
-rtl_eeprom -d0 -s stx:1090:27 (damit wird das 1. SDR programmiert, hier das ADS-B SDR)
+rtl_eeprom -d0 -s stx:1090:27 (with this the 1st SDR is programmed, here the ADS-B SDR)
 
-rtl_eeprom -d1 -s stx:0:19 (als PPM Beispiel "19" für das 2. SDR das für FLARM verwendet wird)
+rtl_eeprom -d1 -s stx:0:19 (as PPM example "19" for the 2nd SDR which is used for FLARM)
 
-"stx:0" bedeutet dass dem 2.SDR keine Frequenz zugewiesen wird, es dann aber automatisch für FLARM verwendet wird
+"stx:0" means that no frequency is assigned to the 2.SDR, but then it is automatically used for FLARM.
 
-Power Off und Neustart.“
+Power Off and restart.“
 
-Assignment of USB Ports Manual
+Assignment of USB Ports Manual (https://github.com/cyoung/stratux/wiki/FAQ)
 
 Switch to root.
 
@@ -275,7 +275,7 @@ Plug the 978 MHz SDR back in.
 
 shutdown -r now
 
-Assignment of USB Ports Automatic
+Assignment of USB Ports Automatic (https://github.com/cyoung/stratux/wiki/SDR-Serials)
 
 Stratux has a script to automate this process of setting the SDR Serials.
 
