@@ -257,6 +257,23 @@ $ sudo su -
 
 Depending on the version of Stratux some or all of the following commands may be required to shut down the Stratux processes.
 
+service stratux stop
+
+screen -x stratux Ctrl-C
+
+screen -x dump1090 Ctrl-C
+
+Ensure only the 978 MHz SDR is plugged in.
+
+rtl_eeprom -d 0 -s stratux:978
+
+Unplug the 978 MHz SDR and plug in the 1090 MHz SDR.
+
+rtl_eeprom -d 0 -s stratux:1090
+
+Plug the 978 MHz SDR back in.
+
+shutdown -r now
 
 Assignment of USB Ports Automatic
 
