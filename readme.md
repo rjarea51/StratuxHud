@@ -228,6 +228,66 @@ https://github.com/JohnMarzulli/HudConfig
 13.	View splitter for the right eye. Use a very thin non reflective plastic. Cut it to shape as shown in the image and attach it with double sticking tape on to the side of the monitor. It helps to eliminated viewing distortion through the right eye.
 
 ![splitter](media/splitter.jpg)
+
+## ADS-B/Flarm Anntena Reception optimisation/proraming
+
+„Das ganze geht auch nur über ssh:
+
+Stxstop
+
+kal -d 0 -b GSM900 -c 45 -g 0 (damit wird das 1.PPM gemessen)
+
+kal -d 1 -b GSM900 -c 45 -g 0 (damit wird das 2.PPM gemessen)
+
+das Ergebnis ist das einzustellende 1.PPM, z.B. 27, das 2.PPM z.B. 19
+
+rtl_eeprom -d0 -s stx:1090:27 (damit wird das 1. SDR programmiert, hier das ADS-B SDR)
+
+rtl_eeprom -d1 -s stx:0:19 (als PPM Beispiel "19" für das 2. SDR das für FLARM verwendet wird)
+
+"stx:0" bedeutet dass dem 2.SDR keine Frequenz zugewiesen wird, es dann aber automatisch für FLARM verwendet wird
+
+Power Off und Neustart.“
+
+Assignment of USB Ports Manual
+
+Switch to root.
+
+$ sudo su -
+
+Depending on the version of Stratux some or all of the following commands may be required to shut down the Stratux processes.
+
+# service stratux stop
+
+# screen -x stratux Ctrl-C
+
+# screen -x dump1090 Ctrl-C
+
+Ensure only the 978 MHz SDR is plugged in.
+
+# rtl_eeprom -d 0 -s stratux:978
+
+Unplug the 978 MHz SDR and plug in the 1090 MHz SDR.
+
+# rtl_eeprom -d 0 -s stratux:1090
+
+Plug the 978 MHz SDR back in.
+
+# shutdown -r now
+
+
+Assignment of USB Ports Automatic
+
+Stratux has a script to automate this process of setting the SDR Serials.
+
+SSH into Stratux and do:
+
+Type sudo su -
+
+Type sdr-tool.sh
+
+READ THE SCREEN
+
  
 ## License
 
