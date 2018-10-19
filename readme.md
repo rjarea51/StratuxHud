@@ -111,7 +111,7 @@ void loop() {
 
 }
 
-## Software changes to fit text better (lower) on the glass
+## Software changes to better fit text(lower)on to the glass
 
 The text was for me, to high. I left the G-Meter text. I changed and added the value "3" in:
 
