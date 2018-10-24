@@ -40,15 +40,15 @@ I use the proximity script since it is less touchy in flight.
 
 This way you will scroll through the windows quickly. 
 You will also have to make chages in "heads_up_display.py" because I can't find a plus key in Arduino
-
+```diff
 if event.key in [pygame.K_KP_PLUS, pygame.K_PLUS]:
 
 to 
 
 if event.key in [pygame.K_RIGHT]:
-
+```
 Sketch:
-
+```diff
 #include <SparkFun_APDS9960.h>
 #include <Keyboard.h>
 // Global Variables
@@ -110,15 +110,14 @@ void loop() {
  delay(600);
 
 }
-
+```
 ## Software changes to better fit text(lower)on to the glass
 
 The text was for me, to high. I left the G-Meter text. I changed and added the value "3" in:
-
+```diff
 sudo nano /home/pi/StratuxHud/views/altitude.py
 
 sudo nano /home/pi/StratuxHud/views/groundspeed.py
-
 
 "self.__text_y_pos__ = (text_half_height << 2) + \
             center_y - text_half_height"
@@ -127,6 +126,8 @@ sudo nano /home/pi/StratuxHud/views/groundspeed.py
  
  "self.__text_y_pos__ = (text_half_height << 3) + \
             center_y - text_half_height"
+            
+``` 
           
  Changed the two text color from white to green
 
@@ -238,7 +239,7 @@ https://github.com/JohnMarzulli/HudConfig
 ## ADS-B/Flarm Anntena Reception optimisation/proraming
 
 „The whole thing works over ssh:
-
+```diff
 Stxstop
 
 kal -d 0 -b GSM900 -c 45 -g 0 (with this the PPM 1 is measured)
@@ -254,9 +255,10 @@ rtl_eeprom -d1 -s stx:0:19 (as PPM example "19" for the 2nd SDR which is used fo
 "stx:0" means that no frequency is assigned to the 2.SDR, but then it is automatically used for FLARM.
 
 Power Off and restart.“
+```
 
 Assignment of USB Ports Manual (https://github.com/cyoung/stratux/wiki/FAQ)
-
+```diff
 Switch to root.
 
 $ sudo su -
@@ -281,10 +283,11 @@ Plug the 978 MHz SDR back in.
 
 shutdown -r now
 
+```
 Assignment of USB Ports Automatic (https://github.com/cyoung/stratux/wiki/SDR-Serials)
 
 Stratux has a script to automate this process of setting the SDR Serials.
-
+```diff
 SSH into Stratux and do:
 
 Type sudo su -
@@ -292,7 +295,7 @@ Type sudo su -
 Type sdr-tool.sh
 
 READ THE SCREEN
-
+```
  
 ## License
 
