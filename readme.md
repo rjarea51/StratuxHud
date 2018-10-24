@@ -247,7 +247,7 @@ https://github.com/JohnMarzulli/HudConfig
 
 ![splitter](media/splitter.jpg)
 
-## ADS-B/Flarm Anntena Reception optimisation/proraming
+## ADS-B/Flarm Anntena Reception optimisation/programing
 
 „The whole thing works over ssh:
 ```diff
