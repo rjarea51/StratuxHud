@@ -41,6 +41,9 @@ I use the proximity script since it is less touchy in flight.
 This way you will scroll through the windows quickly. 
 You will also have to make chages in "heads_up_display.py" because I can't find a plus key in Arduino
 ```diff
+
+sudo nano /home/pi/StratuxHud/heads_up_display.py
+
 if event.key in [pygame.K_KP_PLUS, pygame.K_PLUS]:
 
 to 
@@ -249,7 +252,7 @@ https://github.com/JohnMarzulli/HudConfig
 
 ## ADS-B/Flarm Anntena Reception optimisation/programming
 
-„The whole thing works over ssh:
+The whole thing works over ssh:
 ```diff
 Stxstop
 
@@ -265,7 +268,7 @@ rtl_eeprom -d1 -s stx:0:19 (as PPM example "19" for the 2nd SDR which is used fo
 
 "stx:0" means that no frequency is assigned to the 2.SDR, but then it is automatically used for FLARM.
 
-Power Off and restart.“
+Power Off and restart.
 ```
 
 Assignment of USB Ports Manual (https://github.com/cyoung/stratux/wiki/FAQ)
