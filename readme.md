@@ -135,19 +135,19 @@ sudo nano /home/pi/StratuxHud/views/groundspeed.py
 you may need diffrent values these are just rough for now
 
 ```diff 
-+sudo nano /boot/config.txt
+sudo nano /boot/config.txt
 
-+disable_overscan=1
+disable_overscan=1
 
-+overscan_left=200
+overscan_left=200
 
-+overscan_right=400
+overscan_right=400
 
-+overscan_top=200
+overscan_top=200
 
-+overscan_bottom=0
+overscan_bottom=0
 
-+max_usb_current=1
+max_usb_current=1
 ```
 
 ## Parts List HUD only
