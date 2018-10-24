@@ -184,11 +184,11 @@ http://www.gliderdesignparts.de/ant_flarm.html
 Install Stratux with or without FLARM. The image I used is in 10/10 2018: https://github.com/PepperJo/stratux/releases/download/v1.4r5-flarm2/stratux-v1.4r5-flarm-588304c8f5.img.zip
 
 Just make sure you set the Raspberry PI system time before you start to install next the StratuxHud software
-
+```diff
 sudo /etc/init.d/ntp stop
 
 sudo /etc/init.d/ntp start
-
+```
 Install and follow John’s StratuxHud software instructions 
 
 https://github.com/JohnMarzulli/StratuxHud
