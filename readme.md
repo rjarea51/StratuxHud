@@ -127,22 +127,28 @@ sudo nano /home/pi/StratuxHud/views/groundspeed.py
  
  "self.__text_y_pos__ = (text_half_height << 3) + \
             center_y - text_half_height"
+          
+ Changed the two text color from white to green
 
 ### Software changes on raspberry
 
 you may need diffrent values these are just rough for now
 
-sudo nano /boot/config.txt
+```diff 
++sudo nano /boot/config.txt
 
-disable_overscan=1
++disable_overscan=1
 
-overscan_left=200
++overscan_left=200
 
-overscan_right=400
++overscan_right=400
 
-Overscan_top=400
++overscan_top=200
 
-Overscan_bottom=-100
++overscan_bottom=0
+
++max_usb_current=1
+```
 
 ## Parts List HUD only
 
