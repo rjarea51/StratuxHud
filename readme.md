@@ -130,6 +130,17 @@ sudo nano /home/pi/StratuxHud/views/groundspeed.py
 ``` 
           
  Changed the two text color from white to green
+ 
+ ```diff
+                 texture = self.__font__.render(
+            groundspeed_text, True, WHITE, BLACK)
+         
+         to
+         
+         texture = self.__font__.render(
+            groundspeed_text, True, GREEN, BLACK)
+            
+ ```
 
 ### Software changes on raspberry
 
