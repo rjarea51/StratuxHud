@@ -312,7 +312,7 @@ READ THE SCREEN
 ```
 ## How to Update StartuxHud
 ```diff
-rm -r /home/pi/StartuxHud /
+sudo rm -r  /home/pi/StratuxHud/
 
 cd ~
 
