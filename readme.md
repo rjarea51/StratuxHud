@@ -318,7 +318,7 @@ cd ~
 
 git clone https://github.com/JohnMarzulli/StratuxHud.git
 
-..reapply changes from “Software changes to better fit text(lower)on to the glass” above
+..reapply changes from “Software changes to better fit text(lower)on to the glass” above and "In Flight Controls"
 
 ```
 ## License
