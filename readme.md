@@ -312,11 +312,13 @@ READ THE SCREEN
 ```
 ## How to Update StartuxHud
 ```diff
-rm -r /home/pi/ StartuxHud /
+rm -r /home/pi/StartuxHud /
 
 cd ~
 
 git clone https://github.com/JohnMarzulli/StratuxHud.git
+
+..reapply changes from “Software changes to better fit text(lower)on to the glass” above
 
 ```
 ## License
