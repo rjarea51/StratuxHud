@@ -310,7 +310,15 @@ Type sdr-tool.sh
 
 READ THE SCREEN
 ```
- 
+## How to Update StartuxHud
+```diff
+rm -r /home/pi/ StartuxHud /
+
+cd ~
+
+git clone https://github.com/JohnMarzulli/StratuxHud.git
+
+```
 ## License
 
 This project is covered by the GPL v3 license.
