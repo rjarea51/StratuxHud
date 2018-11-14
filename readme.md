@@ -321,6 +321,17 @@ git clone https://github.com/JohnMarzulli/StratuxHud.git
 ..reapply changes from “Software changes to better fit text(lower)on to the glass” above and "In Flight Controls"
 
 ```
+## Interesting Projects
+
+DIY avionics for experimental aircrafts:
+
+http://experimentalavionics.com
+
+French spinoff with AHRS and standard instrument layout option:
+
+http://www.etna-soft.com
+
+
 ## License
 
 This project is covered by the GPL v3 license.
