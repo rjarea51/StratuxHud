@@ -165,15 +165,15 @@ overscan_bottom=0
 max_usb_current=1
 ```
 
-## Parts List HUD only
+## Source for HUD systems 
 
-You can find all your parts for the wearable HUD here
+You can find all your parts for the Wearable Pilot HUD here:
 
 OSFS.GA WEARABLE PILOT HUD: https://www.osfs.ga/store/wearable-pilot-hud-c-68/ 
 
 If you are looking for a HUD which is dash or overhead mounted you can find them here
 
-OSFS.GA DASHBOARD PILOT HUD or OVERHEAD PILOT HUD https://www.osfs.ga/store
+OSFS.GA DASHBOARD PILOT HUD or OVERHEAD PILOT HUD: https://www.osfs.ga/store
 
 ## Hardware Improvement
 
