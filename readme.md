@@ -171,7 +171,7 @@ You can find all your parts for the Wearable Pilot HUD here:
 
 OSFS.GA WEARABLE PILOT HUD: https://www.osfs.ga/store/wearable-pilot-hud-c-68/ 
 
-If you are looking for a HUD which is dash or overhead mounted you can find them here
+If you are looking for a HUD which is dash or overhead mounted you can find them here:
 
 OSFS.GA DASHBOARD PILOT HUD or OVERHEAD PILOT HUD: https://www.osfs.ga/store
 
