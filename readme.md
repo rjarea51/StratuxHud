@@ -218,7 +218,11 @@ https://github.com/JohnMarzulli/HudConfig
 
 3.	Cut glass in half, by using a lot of masking tape to give you an edge for cutting. Edge out a grove. Be careful not to scratch the glass. (use at own risk) Heat up the blade tip of a metal xacto knife and cut through the plastic. Sand the edges smooth afterwards
 
+![Glass](media/HUdComp7_1.jpg)
+
 4.	(use at own risk) With a small awl or large needle put the glass in the black plastic glass holder and meld a hole through the glass and the holder so that you can mount the glass with a very small screw on both sides
+
+![Glass](media/HUdComp7_2.jpg)
 
 5.	I mounted the monitor on the outside of the holder because of alignment issues with the glass. Using the center plastic divider piece as a guide, I marked the HDMI and the USB ports on top and on the bottom left and right of the monitor GPIO. Cut out the two spaces for the ports and (use at own risk) melt two holes with a small awl, for an M2 bolt with about 2-2.5 cm length. On either side of the GPIO and mount the bolts with a nut to the black frame.
 
