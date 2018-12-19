@@ -39,7 +39,9 @@ https://www.hackster.io/platisd/nevma-gesture-control-for-the-masses-9cff03
 I use the proximity script since it is less touchy in flight. 
 
 For the geuster controller case I used an old HTC EU Plug (HTC TC P300 Travel Charger
-Model: 79H00079-02M). I cut off the two power plug prongs on the base to fit the controller inside. On the side of the two holes I made an cut out for the USB connector. You want to use epoxy glue and fix so that the lips of the USB conector hold it place (clips/locks on to the case lip) when you move your head 
+Model: 79H00079-02M). I cut off the two power plug prongs on the base to fit the controller inside. On the side of the two holes I made an cut out for the USB connector. You want to use epoxy glue and fix so that the lips of the USB conector hold it place (clips/locks on to the case lip) when you move your head
+
+(media/htc_eu_power_plug.jpg)
 
 
 This way you will scroll through the windows quickly. 
