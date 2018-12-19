@@ -38,6 +38,10 @@ In order to change the windows, I use the gesture control project from NEVMA
 https://www.hackster.io/platisd/nevma-gesture-control-for-the-masses-9cff03
 I use the proximity script since it is less touchy in flight. 
 
+For the geuster controller case I used an old HTC EU Plug (HTC TC P300 Travel Charger
+Model: 79H00079-02M). I cut off the two power plug prongs on the base to fit the controller inside. On the side of the two holes I made an cut out for the USB connector. You want to use epoxy glue and fix so that the lips of the USB conector hold it place (clips/locks on to the case lip) when you move your head 
+
+
 This way you will scroll through the windows quickly. 
 You will also have to make chages in "heads_up_display.py" because I can't find a plus key in Arduino
 ```diff
@@ -114,7 +118,7 @@ void loop() {
 
 }
 ```
-## Software changes to better fit text(lower)on to the glass
+## Software changes to better fit text (lower) on to the glass
 
 The text was for me, to high. I left the G-Meter text. I changed and added the value "3" in:
 ```diff
