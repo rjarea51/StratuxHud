@@ -41,7 +41,7 @@ I use the proximity script since it is less touchy in flight.
 For the geuster controller case I used an old HTC EU Plug (HTC TC P300 Travel Charger
 Model: 79H00079-02M). I cut off the two power plug prongs on the base to fit the controller inside. On the side of the two holes I made an cut out for the USB connector. You want to use epoxy glue and fix so that the lips of the USB conector hold it place (clips/locks on to the case lip) when you move your head
 
-![Case](media/htc_eu_power_plug.jpg)
+![Case](media/htc_eu_power_plug_p300.jpg)
 
 
 This way you will scroll through the windows quickly. 
