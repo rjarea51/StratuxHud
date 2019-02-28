@@ -123,7 +123,7 @@ void loop() {
 ```
 ## Software changes to better fit text (lower) on to the glass
 
-Some of the ext was for me to high up. As of v1.3 (Feb 2019) you will have to add the following code in altitude.py only. I left the G-Meter text (you can remove the code for it in the HUD config web interface). I changed the value for both to "3" in:
+Some of the text was for me to high up on the glass. As of v1.3 (Feb 2019) you will have to add the following code in altitude.py only. I left the G-Meter text (you can remove the code for it in the HUDconfig web interface). I changed the value for both to "3" in:
 ```diff
 sudo nano /home/pi/StratuxHud/views/altitude.py
 
