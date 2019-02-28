@@ -123,9 +123,16 @@ void loop() {
 ```
 ## Software changes to better fit text (lower) on to the glass
 
-The text was for me, to high. I left the G-Meter text. I changed and added the value "3" in:
+Some of the ext was for me to high up. As of v1.3 (Feb 2019) you will have to add the following code in altitude.py only. I left the G-Meter text (you can remove the code for it in the HUD config web interface). I changed the value for both to "3" in:
 ```diff
 sudo nano /home/pi/StratuxHud/views/altitude.py
+
+"self.__text_y_pos__ = center_y - text_half_height"
+            
+ to
+ 
+ "self.__text_y_pos__ = (text_half_height << 3) + \
+            center_y - text_half_height"
 
 sudo nano /home/pi/StratuxHud/views/groundspeed.py
 
@@ -139,7 +146,7 @@ sudo nano /home/pi/StratuxHud/views/groundspeed.py
             
 ``` 
           
- Changed the two text color from white to green
+ Changed the two text color (altitude.py / groundspeed.py) from WHITE to GREEN as showen in the example code from the altitude.py file
  
  ```diff
                  texture = self.__font__.render(
