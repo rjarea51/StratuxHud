@@ -333,6 +333,37 @@ git clone https://github.com/JohnMarzulli/StratuxHud.git
 ..reapply changes from “Software changes to better fit text(lower)on to the glass” above and "In Flight Controls"
 
 ```
+## Update 2019
+```diff
+The Stratux FLARM has forked off and developed for Europe as special version called “Stratux – European edition”
+As of writing we are on v1.5b2-eu010 (Aug-2019)
+https://github.com/b3nn0/stratux/releases/tag/v1.5b2-eu010
+The installation instruction are based on PI3B+Jessie+Stratux-EU+v1.5 StratuxHud 
+1.	Flash SD Card with Johns “StratuxHud_1.5_AIO_pi3series_HDMI_and_composite.zip	Pi3 Only	HUD + Stratux”: https://github.com/JohnMarzulli/StratuxHud/releases/download/v1.5/StratuxHud_1.5_AIO_pi3series_HDMI_and_composite.zip
+2.	Use the instruction from “How to compile and build Stratux executable”: https://github.com/cyoung/stratux/wiki/How-to-compile-and-build-Stratux-executable
+Change “git clone --recursive https://github.com/cyoung/stratux” to git clone --recursive https://github.com/b3nn0/stratux
+3.	Add in the file nano /etc/stratux.conf add the following in the line. Make sure you past it befor the braket
+ ,{"Conn": null,"Ip": "","Port": 2000,"Capability": 8,"MessageQueueLen": 0,"LastUnreachable": "0001-01-01T00:00:00Z","SleepFlag": false,"FFCrippled": false}
+4.	I got FLARm (Disconected) in the status window. So after examining the log file there was an error libjpeg8, so I had to install “sudo apt-get install libjpeg8” and sudo apt-get install libconfig9
+
+Waveshare 3.5inch HDMI LCD Setup:
+sudo nano /boot/config.txt
+# (check if this value is not already set) max_usb_current=1
+hdmi_group=2
+hdmi_mode=87
+hdmi_cvt 800 480 60 6 0 0 0
+Change 800x480 to value 1024×768 1152×864 1280×720 1280×768 1280×800 or higher
+Change color of MSL from white to green in both:
+sudo nano /home/pi/StratuxHud/views/altitude.py
+and 
+sudo nano /home/pi/StratuxHud/views/groundspeed.py
+
+= display.WHITE 
+to
+= display.GREEN 
+
+```
+
 ## Interesting Projects
 
 DIY avionics for experimental aircrafts:
