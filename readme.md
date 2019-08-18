@@ -344,16 +344,17 @@ The installation instruction are based on PI3B+Jessie+Stratux-EU+v1.5 StratuxHud
 Change “git clone --recursive https://github.com/cyoung/stratux” to git clone --recursive https://github.com/b3nn0/stratux
 3.	Add in the file nano /etc/stratux.conf add the following in the line. Make sure you past it befor the braket
  ,{"Conn": null,"Ip": "","Port": 2000,"Capability": 8,"MessageQueueLen": 0,"LastUnreachable": "0001-01-01T00:00:00Z","SleepFlag": false,"FFCrippled": false}
-4.	I got FLARm (Disconected) in the status window. So after examining the log file there was an error libjpeg8, so I had to install “sudo apt-get install libjpeg8” and sudo apt-get install libconfig9
+4.	I got FLARM (Disconected) in the status window. So after examining the log file there was an error libjpeg8, so I had to install “sudo apt-get install libjpeg8” and sudo apt-get install libconfig9
 
-Waveshare 3.5inch HDMI LCD Setup:
+-- Waveshare 3.5inch HDMI LCD Setup:
 sudo nano /boot/config.txt
 # (check if this value is not already set) max_usb_current=1
 hdmi_group=2
 hdmi_mode=87
 hdmi_cvt 800 480 60 6 0 0 0
 Change 800x480 to value 1024×768 1152×864 1280×720 1280×768 1280×800 or higher
-Change color of MSL from white to green in both:
+
+-- Change color of MSL from white to green in both:
 sudo nano /home/pi/StratuxHud/views/altitude.py
 and 
 sudo nano /home/pi/StratuxHud/views/groundspeed.py
