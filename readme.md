@@ -1,6 +1,6 @@
 #STRATUX/FLARM Wearable Pilot HUD (Maturaarbeit/School project 2018)
 
-## Stratux Europe Edidtion + v1.5 StratuxHud update 2019
+## Stratux Europe Edition + v1.5 StratuxHud update 2019
 Added below
 
 ## Introduction
