@@ -1,0 +1,5 @@
+  <head>
+    {% include readme.md %}
+    {% seo %}
+  </head>
+</html>
