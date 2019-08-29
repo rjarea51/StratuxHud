@@ -393,6 +393,7 @@ SkyFun	Aviation, RoscoPi AHRS and Traffic display app for Stratux
 http://skyfun.space
 
 SoftRF, Multifunctional DIY IoT-based general aviation proximity awareness system.
+The App https://play.google.com/store/apps/details?id=space.skyfun.stratofier
 
 https://github.com/lyusupov/SoftRF
 
