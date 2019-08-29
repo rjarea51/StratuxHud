@@ -388,6 +388,13 @@ French spinoff with AHRS and standard instrument layout option:
 
 http://www.etna-soft.com
 
+SkyFun	Aviation, RoscoPi AHRS and Traffic display app for Stratux
+
+http://skyfun.space
+
+SoftRF, Multifunctional DIY IoT-based general aviation proximity awareness system.
+
+https://github.com/lyusupov/SoftRF
 
 ## License
 
