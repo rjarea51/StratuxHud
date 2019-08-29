@@ -363,7 +363,7 @@ sudo nano /home/pi/StratuxHud/views/groundspeed.py
 to
 = display.GREEN 
 
-Option 2 : ADS-B/Flarm Anntena Reception optimisation/programming
+--Option 2 : ADS-B/Flarm Anntena Reception optimisation/programming
 SDR reception calibration.
 In order to find the PPM value, other den then it is descript above, you can us the following script. 
 You will have to kill Stratux first
