@@ -1,5 +1,1 @@
-  <head>
-    {% include readme.md %}
-    {% seo %}
-  </head>
-</html>
+- jekyll-seo-tag
