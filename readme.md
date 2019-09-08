@@ -343,14 +343,24 @@ The installation instruction are based on PI3B+Jessie+Stratux-EU+v1.5 StratuxHud
 1.	Flash SD Card with Johns “StratuxHud_1.5_AIO_pi3series_HDMI_and_composite.zip	Pi3 Only	HUD + Stratux”: https://github.com/JohnMarzulli/StratuxHud/releases/download/v1.5/StratuxHud_1.5_AIO_pi3series_HDMI_and_composite.zip
 
 2.	Install Stratux Europe Edition from "b3nn0"
-wget https://dl.google.com/go/go1.9.linux-armv6l.tar.gz
-tar -zxvf go1.9.linux-armv6l.tar.gz
-git clone --recursive https://github.com/b3nn0/stratux
-cd stratux
-service stratux stop
-make
-make install
-service stratux start
+   wget https://dl.google.com/go/go1.9.linux-armv6l.tar.gz
+   tar -zxvf go1.9.linux-armv6l.tar.gz
+   git clone --recursive https://github.com/b3nn0/stratux
+   cd stratux
+   service stratux stop
+   make
+   make install
+   service stratux start
+   
+   *** IF THERE IS A PROBLEM WITH THE CAFILE, RUN date -s "Tue May 7 19:40:00 UTC 2019"
+AND SET WITH CURRENT UTC TIME*** from https://github.com/cyoung/stratux/wiki/How-to-compile-and-build-Stratux-executable
+
+I used
+```diff
+sudo /etc/init.d/ntp stop
+
+sudo /etc/init.d/ntp start
+```
 
 3.	Add in the file nano /etc/stratux.conf add the following in the line. Make sure you past it befor the braket
  ,{"Conn": null,"Ip": "","Port": 2000,"Capability": 8,"MessageQueueLen": 0,"LastUnreachable": "0001-01-01T00:00:00Z","SleepFlag": false,"FFCrippled": false}
