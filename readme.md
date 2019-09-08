@@ -338,12 +338,23 @@ git clone https://github.com/JohnMarzulli/StratuxHud.git
 The Stratux FLARM has forked off and developed for Europe as special version called “Stratux – European edition”
 As of writing we are on v1.5b2-eu010 (Aug-2019)
 https://github.com/b3nn0/stratux/releases/tag/v1.5b2-eu010
-The installation instruction are based on PI3B+Jessie+Stratux-EU+v1.5 StratuxHud 
+The installation instruction are based on PI3B+Jessie+Stratux-EU+v1.5 StratuxHud
+
 1.	Flash SD Card with Johns “StratuxHud_1.5_AIO_pi3series_HDMI_and_composite.zip	Pi3 Only	HUD + Stratux”: https://github.com/JohnMarzulli/StratuxHud/releases/download/v1.5/StratuxHud_1.5_AIO_pi3series_HDMI_and_composite.zip
-2.	Use the instruction from “How to compile and build Stratux executable”: https://github.com/cyoung/stratux/wiki/How-to-compile-and-build-Stratux-executable
-Change “git clone --recursive https://github.com/cyoung/stratux” to git clone --recursive https://github.com/b3nn0/stratux
+
+2.	Install Stratux Europe Edition from "b3nn0"
+wget https://dl.google.com/go/go1.9.linux-armv6l.tar.gz
+tar -zxvf go1.9.linux-armv6l.tar.gz
+git clone --recursive https://github.com/b3nn0/stratux
+cd stratux
+service stratux stop
+make
+make install
+service stratux start
+
 3.	Add in the file nano /etc/stratux.conf add the following in the line. Make sure you past it befor the braket
  ,{"Conn": null,"Ip": "","Port": 2000,"Capability": 8,"MessageQueueLen": 0,"LastUnreachable": "0001-01-01T00:00:00Z","SleepFlag": false,"FFCrippled": false}
+ 
 4.	I got FLARM (Disconected) in the status window. So after examining the log file there was an error libjpeg8, so I had to install “sudo apt-get install libjpeg8” and sudo apt-get install libconfig9
 
 -- Waveshare 3.5inch HDMI LCD Setup:
@@ -361,7 +372,41 @@ sudo nano /home/pi/StratuxHud/views/groundspeed.py
 
 = display.WHITE 
 to
-= display.GREEN 
+= display.GREEN
+
+-- Change Position
+
+G Meter removed
+
+sudo nano /home/pi/StratuxHud/views/skid_and_gs.py
+
+self.__text_y_pos__ = (text_half_height << 3) + \
+
+to
+
+self.__text_y_pos__ = (text_half_height << 5) + \
+
+Moved down "Alt and Speed"
+
+sudo nano /home/pi/StratuxHud/views/altitude.py
+
+"self.__text_y_pos__ = center_y - text_half_height"
+            
+ to
+ 
+ "self.__text_y_pos__ = (text_half_height << 3) + \
+            center_y - text_half_height"
+
+sudo nano /home/pi/StratuxHud/views/groundspeed.py
+
+"self.__text_y_pos__ = (text_half_height << 2) + \
+            center_y - text_half_height"
+            
+ to
+ 
+ "self.__text_y_pos__ = (text_half_height << 3) + \
+            center_y - text_half_height"
+
 
 --Option 2 : ADS-B/Flarm Anntena Reception optimisation/programming
 SDR reception calibration.
