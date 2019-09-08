@@ -356,11 +356,11 @@ The installation instruction are based on PI3B+Jessie+Stratux-EU+v1.5 StratuxHud
 AND SET WITH CURRENT UTC TIME*** from https://github.com/cyoung/stratux/wiki/How-to-compile-and-build-Stratux-executable
 
 I used
-```diff
+
 sudo /etc/init.d/ntp stop
 
 sudo /etc/init.d/ntp start
-```
+
 
 3.	Add in the file nano /etc/stratux.conf add the following in the line. Make sure you past it befor the braket
  ,{"Conn": null,"Ip": "","Port": 2000,"Capability": 8,"MessageQueueLen": 0,"LastUnreachable": "0001-01-01T00:00:00Z","SleepFlag": false,"FFCrippled": false}
