@@ -375,7 +375,9 @@ hdmi_mode=87
 hdmi_cvt 800 480 60 6 0 0 0
 Change 800x480 to value 1024×768 1152×864 1280×720 1280×768 1280×800 or higher
 
--- Change color of MSL from white to green in both-----------------------------------------------------------
+-- Change color
+MSL from white to green in both
+
 sudo nano /home/pi/StratuxHud/views/altitude.py
 and 
 sudo nano /home/pi/StratuxHud/views/groundspeed.py
@@ -417,8 +419,21 @@ sudo nano /home/pi/StratuxHud/views/groundspeed.py
  "self.__text_y_pos__ = (text_half_height << 3) + \
             center_y - text_half_height"
             
- Removed Altitude and shotend Units--------------------------------------------------------------------------------
+ Removed Altitude and shortend Units--------------------------------------------------------------------------------
 
+Altitude:
+
+sudo nano /home/pi/StratuxHud/views/altitude.py
+
+"' MSL" if orientation.alt is not None and isinstance(
+
+to
+
+ "" if orientation.alt is not None and isinstance(
+ 
+ Speed Units:
+ 
+ 
 
 --Option 2 : ADS-B/Flarm Anntena Reception optimisation/programming
 SDR reception calibration.
