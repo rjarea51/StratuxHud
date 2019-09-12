@@ -433,6 +433,20 @@ to
  
  Speed Units:
  
+ sudo nano /home/pi/StratuxHud/units.py
+ 
+ UNIT_LABELS = {
+    STATUTE: {SPEED: "MPH", DISTANCE: "SM"},
+    NAUTICAL: {SPEED: "KTS", DISTANCE: "NM"},
+    METRIC: {SPEED: "KPH", DISTANCE: "KM"}
+    
+ to
+ 
+ UNIT_LABELS = {
+    STATUTE: {SPEED: "S", DISTANCE: "SM"},
+    NAUTICAL: {SPEED: "N", DISTANCE: "NM"},
+    METRIC: {SPEED: "K", DISTANCE: "KM"}
+ 
  
 
 --Option 2 : ADS-B/Flarm Anntena Reception optimisation/programming
