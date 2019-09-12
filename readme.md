@@ -419,7 +419,7 @@ sudo nano /home/pi/StratuxHud/views/groundspeed.py
  "self.__text_y_pos__ = (text_half_height << 3) + \
             center_y - text_half_height"
             
- Removed Altitude and shortend Units--------------------------------------------------------------------------------
+ Removed Altitude and shortened Units--------------------------------------------------------------------------------
 
 Altitude:
 
